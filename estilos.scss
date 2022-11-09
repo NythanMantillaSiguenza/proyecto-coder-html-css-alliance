@@ -1,0 +1,432 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-image:url(./image/1.jpg);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+}
+
+.navbar{
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.collapse-navbar{
+    float: right;
+}
+
+.navbar-brand{
+    padding: 10px 0 10px 20px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: medium;
+    text-shadow: 0 0 3px rgb(253, 253, 253);
+}
+
+button .navbar-toggler{
+    float: right;
+}
+
+li a{
+    text-transform: capitalize;
+    float: right;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+li a :hover{
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call{
+    text-align: center;
+    color: white;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.849);
+    width: 80%;
+    margin-top: 30px;
+    padding: 40px 15px 30px 15px;
+    border-radius: 6px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    h2{
+        border-radius: 6px;
+        margin: 0 27px 0 20px;
+        color:  rgb(255, 255, 255);
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: Oswald,Arial,Helvetica,sans-serif;
+        text-align: center;
+        flex-direction: row;
+        letter-spacing: 8px;
+    }
+    p{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 2px;
+        font-weight: lighter;
+        line-height: 25px;
+        letter-spacing: 2px;
+        box-sizing: border-box;
+    }
+    a{
+        background-color: rgb(91, 175, 123);
+        color: rgb(0, 0, 0);
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: height 2.7s;
+    }
+    a:hover{
+        background-color: rgb(91, 175, 123);
+        color: rgb(255, 255, 255);
+        border: 3px solid rgb(4, 95, 39);
+        height: 80px;
+    }
+}
+
+.inicio{
+    background-color: rgba(0, 0, 0, 0.61);
+    height:auto;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h2{
+        background-color: rgba(0, 0, 0, 0.726);
+        height: 20px;
+        width: 100%;
+        text-transform: capitalize;
+        font-family: Oswald,Arial,Helvetica,sans-serif;
+        letter-spacing: 4px;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+    p{
+        font-family: Oswald,Arial,Helvetica,sans-serif;
+        letter-spacing: 2px;
+        font-size: 12px;
+        padding: 4px;
+        text-align: center;
+        color: white;
+        span{
+            background-color: rgba(0, 0, 0, 0.726);
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+.imgar{
+    height: auto;
+    width: 80%;
+    padding-bottom: 10px;
+}
+/* footer inicio */
+footer{
+    background-color: rgb(39, 104, 64);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    p{
+        color: rgb(2, 2, 2);
+    }
+}
+
+.redes{
+    font-size: 30px; 
+    letter-spacing: 7px;
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    a :hover{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+}
+
+.subir{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 4px solid rgb(41, 138, 78);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: rgb(70, 197, 119);
+    text-align: center; 
+    font-size: 15px;
+    line-height: 28px;
+    border-radius: 65%;
+    box-shadow: black 0 0 5px;
+    padding-bottom: 25px;
+}
+ /* footer fin */
+/* Inicio css para biografia */
+
+#biografia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    height:auto;
+    width: 100%;
+}
+
+.nleft img{
+    margin: 30px 40px;
+    width: 80%;
+}
+
+/* .nright{
+    text-align: center;
+    margin: 20px 30px;
+    letter-spacing: 2px;
+    font-family: Oswald,Arial,Helvetica,sans-serif;
+    line-height: 28px;
+} */
+
+.nright h3{
+    color: rgb(224, 224, 224);
+    text-shadow: 0 0 5px rgb(165, 165, 165);
+    letter-spacing: 8px;
+    font-family: Oswald,Arial,Helvetica,sans-serif;
+    line-height: 28px;
+    text-align: center;
+}
+
+.nright p{
+    color: rgb(231, 231, 231);
+    text-align: center;
+    margin: 20px 30px;
+    letter-spacing: 2px;
+    font-family: Oswald,Arial,Helvetica,sans-serif;
+    line-height: 28px;
+}
+/* fin de css biografia */
+/* inicio css nosotros */
+#nosotros{
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 250px);
+    grid-gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.item{
+    width: 80%; 
+}
+
+.item1{
+    background-image: url(./image/matipr.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    background-image: url(./image/tompr.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background-image: url(./image/nahu\ pr.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    background-image: url(./image/clase1.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5{
+    background-image: url(./image/clase\ 2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6{
+    background-image: url(./image/clase\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7{
+    background-image: url(./image/clase\ 4.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8{
+    background-image: url(./image/clase\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item9{
+    background-image: url(./image/clase\ 7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item10{
+    background-image: url(./image/clase\ 8.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item11{
+    background-image: url(./image/clase\ 4.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item12{
+    background-image: url(./image/nahu\ \(4\).JPG);
+    background-size: cover;
+    background-position: center;
+}
+/* fin de nosotros css */
+/* css inicio de horarios */
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px ;
+    img{
+        height: auto;
+        width: 100%;
+    }
+}
+/* css fin de horarios */
+/* css inicio de contacto */
+.contacto{
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        text-transform: capitalize;
+        font-family: Oswald,Arial,Helvetica,sans-serif;
+        letter-spacing: 8px;
+        font-size: x-large;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    form{
+        text-transform: uppercase;
+        font-family: Oswald,Arial,Helvetica,sans-serif;
+        letter-spacing: 2px;
+        color: white;
+    }
+}
+/* css fin de contacto */
+/* cambios 480px inicio */
+@media only screen and (min-width:480px){
+    
+    
+    #nosotros{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 250px);
+    }
+
+}
+/* cambios 480px fin */
+/* cambios 768px inicio */
+@media only screen and (min-width:768px){
+    .call h2{
+        font-size: 30px;
+    }
+    .call p{
+    font-size: 16px;
+    }
+    .inicio h2{
+    font-size: 30px;
+    }
+    .inicio p{
+    font-size: 16px;
+    }
+    .inicio span{
+    font-size: 24px;
+    }
+    #nosotros{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 250px);
+    }
+}
+/* cambios 768px fin */
+/* cambios 1080px inicio */
+@media only screen and (min-width:1080px){
+    .call h2{
+        font-size: 38px;
+    }
+.call p{
+    font-size: 18px;
+    }
+    #nosotros{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .item4{
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+    .item6{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item7{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}
+/* cambios 1080px fin */
