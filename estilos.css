@@ -63,9 +63,6 @@ main {
 }
 
 .call {
-  text-align: center;
-  color: white;
-  font-size: small;
   background-color: rgba(0, 0, 0, 0.849);
   width: 80%;
   margin-top: 30px;
@@ -78,28 +75,29 @@ main {
 .call h2 {
   border-radius: 6px;
   margin: 0 27px 0 20px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
   text-transform: capitalize;
-  font-family: Oswald, Arial, Helvetica, sans-serif;
   text-align: center;
   flex-direction: row;
   letter-spacing: 8px;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
 }
 .call p {
   display: flex;
   flex-direction: row;
-  text-align: center;
   font-size: 12px;
   padding: 5px 2px;
   font-weight: lighter;
   line-height: 25px;
   letter-spacing: 2px;
   box-sizing: border-box;
+  text-align: center;
+  color: white;
 }
 .call a {
   background-color: rgb(91, 175, 123);
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   width: auto;
@@ -113,7 +111,7 @@ main {
 }
 .call a:hover {
   background-color: rgb(91, 175, 123);
-  color: rgb(255, 255, 255);
+  color: white;
   border: 3px solid rgb(4, 95, 39);
   height: 80px;
 }
@@ -220,13 +218,6 @@ footer p {
   width: 80%;
 }
 
-/* .nright{
-    text-align: center;
-    margin: 20px 30px;
-    letter-spacing: 2px;
-    font-family: Oswald,Arial,Helvetica,sans-serif;
-    line-height: 28px;
-} */
 .nright h3 {
   color: rgb(224, 224, 224);
   text-shadow: 0 0 5px rgb(165, 165, 165);
@@ -364,7 +355,7 @@ footer p {
   letter-spacing: 8px;
   font-size: x-large;
   padding: 20px;
-  color: white;
+  color: Oswald, Arial, Helvetica, sans-serif;
   text-align: center;
 }
 .contacto form {
@@ -430,4 +421,6 @@ footer p {
     grid-row: 3/4;
   }
 }
-/* cambios 1080px fin *//*# sourceMappingURL=estilos.css.map */
+/* cambios 1080px fin */
+
+/*# sourceMappingURL=estilos.css.map */

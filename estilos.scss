@@ -4,15 +4,10 @@ $color-n: black;
 $color-g: rgb(91, 175, 123);
 $tamano-fuente-t: 20px;
 $tamano-fuente-p: 12px;
-@mixin titulos($fuente, $color, $tamano){
-    font-family: $fuente;
-    color: $color;
-    font-size: $tamano;
-}
-@mixin parrafos($fuente, $color, $tamano){
-    font-family: $fuente;
-    color: $color; 
-    font-size: $tamano;
+@mixin img-grid($bg-image ,$bg-size, $bg-position){
+    background-image: $bg-image;
+    background-size: $bg-size;
+    background-position: $bg-position;
 }
 body{
     margin: 0;
@@ -65,8 +60,8 @@ li a{
 }
 
 li a :hover{
-    color: white;
-    text-shadow: 0 0 5px white;
+    color: $color-w;
+    text-shadow: 0 0 5px $color-w;
 }
 
 main{
@@ -79,9 +74,6 @@ main{
 }
 
 .call{
-    text-align: center;
-    color: white;
-    font-size: small;
     background-color: rgba(0, 0, 0, 0.849);
     width: 80%;
     margin-top: 30px;
@@ -104,17 +96,18 @@ main{
     p{
         display: flex;
         flex-direction: row;
-        text-align: center;
-        font-size: 12px;
+        font-size: $tamano-fuente-p;
         padding: 5px 2px;
         font-weight: lighter;
         line-height: 25px;
         letter-spacing: 2px;
         box-sizing: border-box;
+        text-align: center;
+        color: $color-w;
     }
     a{
-        background-color: rgb(91, 175, 123);
-        color: rgb(0, 0, 0);
+        background-color: $color-g;
+        color:$color-n;
         padding: 10px 20px 10px 20px;
         border-radius: 10px;
         width: auto;
@@ -127,8 +120,8 @@ main{
         transition: height 2.7s;
     }
     a:hover{
-        background-color: rgb(91, 175, 123);
-        color: rgb(255, 255, 255);
+        background-color:$color-g;
+        color:$color-w;
         border: 3px solid rgb(4, 95, 39);
         height: 80px;
     }
@@ -149,20 +142,20 @@ main{
         height: 20px;
         width: 100%;
         text-transform: capitalize;
-        font-family: Oswald,Arial,Helvetica,sans-serif;
+        font-family: $fuente1;
         letter-spacing: 4px;
         font-size: 20px;
         text-align: center;
-        padding: 20px;
+        padding: $tamano-fuente-t;
         color: white;
     }
     p{
-        font-family: Oswald,Arial,Helvetica,sans-serif;
+        font-family: $fuente1;
         letter-spacing: 2px;
-        font-size: 12px;
+        font-size: $tamano-fuente-p;
         padding: 4px;
         text-align: center;
-        color: white;
+        color: $color-w;
         span{
             background-color: rgba(0, 0, 0, 0.726);
             height: auto;
@@ -205,7 +198,7 @@ footer{
 .subir{
     height: 25px;
     width: 25px;
-    background-color: white;
+    background-color: $color-w;
     border: 4px solid rgb(41, 138, 78);
     position: fixed;
     right: 20px;
@@ -239,7 +232,7 @@ footer{
     color: rgb(224, 224, 224);
     text-shadow: 0 0 5px rgb(165, 165, 165);
     letter-spacing: 8px;
-    font-family: Oswald,Arial,Helvetica,sans-serif;
+    font-family: $fuente1;
     line-height: 28px;
     text-align: center;
 }
@@ -249,7 +242,7 @@ footer{
     text-align: center;
     margin: 20px 30px;
     letter-spacing: 2px;
-    font-family: Oswald,Arial,Helvetica,sans-serif;
+    font-family: $fuente1;
     line-height: 28px;
 }
 /* fin de css biografia */
@@ -271,75 +264,51 @@ footer{
 }
 
 .item1{
-    background-image: url(./image/matipr.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/matipr.JPG), cover, center )
 }
 
 .item2{
-    background-image: url(./image/tompr.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/tompr.JPG), cover, center )
 }
 
 .item3{
-    background-image: url(./image/nahu\ pr.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/nahu\ pr.JPG), cover, center )
 }
 
 .item4{
-    background-image: url(./image/clase1.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase1.JPG), cover, center )
 }
 
 .item5{
-    background-image: url(./image/clase\ 2.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase\ 2.JPG), cover, center )
 }
 
 .item6{
-    background-image: url(./image/clase\ 3.jpg);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase\ 3.jpg), cover, center )
 }
 
 .item7{
-    background-image: url(./image/clase\ 4.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase\ 4.JPG), cover, center )
 }
 
 .item8{
-    background-image: url(./image/clase\ 5.jpg);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase\ 5.jpg), cover, center )
 }
 
 .item9{
-    background-image: url(./image/clase\ 7.jpg);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase\ 7.jpg), cover, center )
 }
 
 .item10{
-    background-image: url(./image/clase\ 8.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase\ 8.JPG), cover, center )
 }
 
 .item11{
-    background-image: url(./image/clase\ 4.JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/clase\ 4.JPG), cover, center )
 }
 
 .item12{
-    background-image: url(./image/nahu\ \(4\).JPG);
-    background-size: cover;
-    background-position: center;
+    @include img-grid(url(./image/nahu\ \(4\).JPG), cover, center )
 }
 /* fin de nosotros css */
 /* css inicio de horarios */
@@ -364,16 +333,16 @@ footer{
     align-items: center;
     h2{
         text-transform: capitalize;
-        font-family: Oswald,Arial,Helvetica,sans-serif;
+        font-family: $fuente1;
         letter-spacing: 8px;
         font-size: x-large;
         padding: 20px;
-        color: white;
+        color: $fuente1;
         text-align: center;
     }
     form{
         text-transform: uppercase;
-        font-family: Oswald,Arial,Helvetica,sans-serif;
+        font-family: $fuente1;
         letter-spacing: 2px;
         color: white;
     }
